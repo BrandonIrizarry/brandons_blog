@@ -12,15 +12,6 @@ programming language I was designing at the time.
 
 +++
 
-# Table of Contents
-
-+ [Introduction](#introduction)
-+ ["It's like a burrito"](#its-like-a-burrito)
-+ [Down To Brass Tacks](#down-to-brass-tacks)
-+ [Wanting More](#wanting-more)
-
-<a id="introduction"></a>
-
 # Introduction
 
 I've forgotten how I came across Pratt parsing specifically. I had
@@ -46,8 +37,6 @@ are always used for application terms there.)
 
 This time though, I wanted to try something different. And so,
 rummaging through the internets, I stumbled across Pratt parsing.
-
-<a id="its-like-a-burrito"></a>
 
 # "It's like a burrito"
 
@@ -115,8 +104,6 @@ the current `level`, the while loop exits and `acc` is returned.
 
 The algorithm is initialized by calling `parse(0)`.
 
-<a id="down-to-brass-tacks"></a>
-
 # Down To Brass Tacks
  
 My approach was to take Eli Bendersky's full source code at the bottom
@@ -137,8 +124,6 @@ say you have precedence levels `MULTIPLICATION = 2` and
 `EXPONENTIATION-1` with `MULTIPLICATION` when enforcing right
 associativity for exponentiation. I found this to be one of the more
 remarkable aspects of the algorithm.
-
-<a id="wanting-more"></a>
 
 # Wanting More
 

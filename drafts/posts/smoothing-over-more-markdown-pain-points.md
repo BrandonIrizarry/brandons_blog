@@ -12,15 +12,6 @@ generating a table of contents for a Markdown file.
 
 +++
 
-# Table of Contents
-
-+ [I Couldn't Keep It Together](#i-couldn't-keep-it-together)
-+ [Elisp For The Win](#elisp-for-the-win)
-+ [Yet Another Yasnippet Testimonial](#yet-another-yasnippet-testimonial)
-+ [Now I Can Keep It Together!](#now-i-can-keep-it-together!)
-
-
-<a id="i-couldn't-keep-it-together"></a>
 # I Couldn't Keep It Together
 
 As I go about editing these blogs as Markdown buffers inside Emacs,
@@ -35,7 +26,6 @@ on—is a pain.  And so I came up with a way to sync the two, using
 Emacs Lisp. Emacs Lisp, or Elisp for short, is the Emacs editor's
 extension language: the language you use to write Emacs plugins.
 
-<a id="elisp-for-the-win"></a>
 # Elisp For The Win
 [Having written](https://brandonirizarry.xyz/blog/writing_my_blog_with_eleventy/#introduction) about my zany Elisp-based Java build system made
 me recall those times: I could once again rise to the challenge, and
@@ -58,7 +48,6 @@ manage locally. I store it remotely, and install it as an *official*
 package, much like how Go packages work. In this way, I can even share
 my work with the community.
 
-<a id="yet-another-yasnippet-testimonial"></a>
 # Yet Another Yasnippet Testimonial
 
 I also decided to go the extra mile and use a [Yasnippet](Yasnippet) snippet
@@ -70,7 +59,6 @@ to set up her `ox-hugo` front matter. In fact, this is what turned me
 on to the idea of Yasnippet as a useful tool in general; that is, it
 isn't just a lazy man's way of inserting a for-loop into source code.
 
-<a id="now-i-can-keep-it-together!"></a>
 # Now I Can Keep It Together!
 
 I now use table-of-contents regeneration frequently: writing the

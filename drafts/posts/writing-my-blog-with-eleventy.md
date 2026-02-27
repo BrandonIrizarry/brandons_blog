@@ -12,16 +12,6 @@ since migrated to a custom engine.
 
 +++
 
-# Table of Contents
-
-+ [Introduction](#introduction)
-+ [Hugo](#hugo)
-+ [Eleventy: The Soup Actually Tastes Good](#eleventy:-the-soup-actually-tastes-good)
-+ [Painless Deployment](#painless-deployment)
-+ [Conclusion](#conclusion)
-
-
-<a id="introduction"></a>
 # Introduction
 
 This is *at least* my third time trying to start a blog.
@@ -36,7 +26,6 @@ dependencies (defined by things like package imports and code syntax),
 so that those would get passed into `javac` along with the target
 file.
 
-<a id="hugo"></a>
 # Hugo
 I then started writing a blog using Hugo. Hugo was my first encounter
 with an SSG. Because of this, I was a bit impatient with Hugo, and hit
@@ -54,7 +43,6 @@ and Hugo obfuscates the nature of Hugo, something I'm realizing now as
 I go deeper into using Eleventy.
 
 
-<a id="eleventy:-the-soup-actually-tastes-good"></a>
 # Eleventy: The Soup Actually Tastes Good
 
 I went ahead and did a little bit of "shopping" for SSGs. I ran into
@@ -83,7 +71,6 @@ occurring within the same file—all somehow live under one
 roof. However, tweaking the starter project ended up being a
 relatively easy, even pleasant experience.
 
-<a id="painless-deployment"></a>
 # Painless Deployment
 
 Even deployment is simple. This site's content is version-controlled
@@ -94,7 +81,6 @@ with the new files. I don't need a GitHub workflow, as I did when
 using Hugo with GitHub pages; I don't even need to push to a remote
 repo. Copying the files suffices.
 
-<a id="conclusion"></a>
 # Conclusion
 
 On the one hand, I'm nowhere near able to make something like the
