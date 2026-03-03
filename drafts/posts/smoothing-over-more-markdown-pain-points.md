@@ -27,7 +27,7 @@ Emacs Lisp. Emacs Lisp, or Elisp for short, is the Emacs editor's
 extension language: the language you use to write Emacs plugins.
 
 # Elisp For The Win
-[Having written](https://brandonirizarry.xyz/blog/writing_my_blog_with_eleventy/#introduction) about my zany Elisp-based Java build system made
+[Having written](2025-12-03) about my zany Elisp-based Java build system made
 me recall those times: I could once again rise to the challenge, and
 solve this new problem with Elisp. That's exactly what I did. I wrote
 two functions, `bcimd-generate-toc` and `bcimd-remove-toc`. The first
