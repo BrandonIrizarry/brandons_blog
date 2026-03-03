@@ -36,6 +36,10 @@ learned while working on my SSG is that template parsing should not be
 done when serving an endpoint, since this creates a significant
 performance bottleneck.
 
+Generics also came in handy when I wanted to reuse the exact same code
+for differing frontmatter layouts (e.g., project posts like this one,
+versus ordinary blog posts.)
+
 # RSS
 
 Setting up RSS for my site (once you know the tricks) turns out to be
