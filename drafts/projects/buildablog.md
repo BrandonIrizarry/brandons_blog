@@ -3,7 +3,7 @@ name = "buildablog"
 host_url = "https://github.com/BrandonIrizarry/buildablog"
 synopsis = "The SSG used to build this site."
 stack = ["Go", "HTML", "CSS"]
-thumbnail = "static/github-white.svg"
+thumbnail = "assets/github-white.svg"
 date = 2025-03-01
 +++
 
