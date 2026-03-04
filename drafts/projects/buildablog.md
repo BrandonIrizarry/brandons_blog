@@ -64,15 +64,17 @@ With regard to RSS, I feel *all* blogs should have an RSS/Atom
 feed. There are some fantastic ones out there that don't!
 
 When setting up RSS, I finally grokked something while reading a [blog
-post](https://pluralistic.net/2024/10/16/keep-it-really-simple-stupid/) by Cory Doctorow where he advocates for RSS: RSS *is* social
-media.
+post](https://pluralistic.net/2024/10/16/keep-it-really-simple-stupid/) by Cory Doctorow where he advocates for RSS:
+
+I realized that **RSS is a genre of social media.**
 
 # Sources of Inspiration
 
 I took (and continue to take) inspiration from blogs I've seen in the
 wild, such as:
 
-1. https://maurycyz.com/  
+1. <https://maurycyz.com/>  
+
    I ripped off a lot of CSS (and general design decisions) from this
    site. 😁 The great thing about this site is that it proves that you
    can be both a highly intelligent and original thinker without being
@@ -84,15 +86,17 @@ wild, such as:
    As a shout out, the author even gives some quick lessons on setting
    up a blog and writing the HTML and CSS for a simple website (which
    I also took pointers from! This guy probably did a better job of
-   explaining what `width: 100%;` means then a lot of resources I've
+   explaining what `width: 100%;` means than a lot of resources I've
    seen online.)
 
-2. https://nullprogram.com/  
+2. <https://nullprogram.com/>  
+
    For pointers on how to establish a convention for blog post
    slugs. This author uses the date-based scheme, which I adopted in
    the end.
 
-3. https://elly.town/  
+3. <https://elly.town/>  
+
    For general compactness of aesthetic. While I don't plan on going
    that route, the nod to S-expression syntax is nice.
 
