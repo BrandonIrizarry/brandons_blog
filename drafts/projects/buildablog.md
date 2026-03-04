@@ -20,11 +20,11 @@ is forwarded over to the [frontmatter](https://github.com/adrg/frontmatter) and 
 (with help from the [goldmark-highlighting](https://github.com/yuin/goldmark-highlighting/v2) extension library for
 prettifying code listings.)
 
-Basically, it felt like writing my own SSG from scratch felt like it
-was going to be at most not that much harder than learning the ins and
-outs of configuring an existing SSG like Hugo or Eleventy. It would
-also in the end allow me to configure my site at the atomic level, so
-to speak - I write and maintain the server endpoints, the HTML Go
+Basically, writing my own SSG from scratch felt like it was going to
+be at most not that much harder than learning the ins and outs of
+configuring an existing SSG like Hugo or Eleventy. It would also in
+the end allow me to configure my site at the atomic level, so to
+speak - I write and maintain the server endpoints, the HTML Go
 templates, the CSS styling, you get the idea.
 
 Using Go templates can be daunting at first, but Section 4.6 of of
