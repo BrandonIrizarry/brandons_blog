@@ -51,6 +51,11 @@ since the former is [touted](https://nullprogram.com/blog/2013/09/23/) as strict
 the end I decided that RSS is good enough to get things started for
 now.
 
+I did face a last-minute curveball when I realized I had to integrate
+the *projects* listing to the RSS feed. To this end, I needed a
+reliable way to sort RSS item fields by date, which necessitated some
+beefing up of the rss package itself.
+
 Two notable resources for learning about interfacing RSS with Go code
 are:
 
