@@ -4,7 +4,7 @@ host_url = "https://github.com/BrandonIrizarry/buildablog"
 synopsis = "The SSG used to build this site."
 stack = ["Go", "HTML", "CSS"]
 thumbnail = "assets/github-white.svg"
-date = 2025-03-01
+date = 2026-03-01
 +++
 
 # Motivation
