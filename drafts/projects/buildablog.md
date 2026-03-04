@@ -1,5 +1,6 @@
 +++
 name = "buildablog"
+title = "Building My Own SSG"
 host_url = "https://github.com/BrandonIrizarry/buildablog"
 synopsis = "The SSG used to build this site."
 stack = ["Go", "HTML", "CSS"]
