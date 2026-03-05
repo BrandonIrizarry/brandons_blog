@@ -5,7 +5,7 @@ date = 2025-12-05
 
 summary = """
 
-A post I had written about a small Elisp helper library I wrote for \
+A post from my old blog about a small Elisp helper library I wrote for \
 generating a table of contents for a Markdown file.
 
 """
