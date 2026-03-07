@@ -75,7 +75,7 @@ self:
    to your published Nginx configuration, and then reload Nginx
    (e.g. `sudo systemctl restart nginx.service`):
 
-```
+```nginx
 server {
     listen 80;
     listen [::]:80;
