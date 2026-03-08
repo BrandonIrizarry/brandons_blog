@@ -1,6 +1,6 @@
 +++
 title = "Adding a CGit Subdomain To My Site"
-tags = ["linux", "nginx", "certbot"]
+tags = ["linux", "nginx", "certbot", "cgit"]
 summary = "Setting up CGit on my VPS."
 date = 2026-03-06
 +++
