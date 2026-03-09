@@ -19,3 +19,6 @@ func main() {
 <br>
 
 [This is a link](https://example.com)
+
+
+![](/assets/cat.jpg)
