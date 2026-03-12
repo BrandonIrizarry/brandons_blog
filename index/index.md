@@ -1,6 +1,7 @@
 +++
 title = "Brandon's Blog"
 summary = "My website's front page."
+date = 2026-03-11
 +++
 
 Welcome to my site!
