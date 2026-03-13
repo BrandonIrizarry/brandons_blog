@@ -55,8 +55,10 @@ Luckily, [go-git](https://go-git.github.io/docs/) comes to the rescue here. At f
 implement Git-based reads alongside conventional filesystem reads, but
 couldn't figure out how to make these two methods play nicely in the
 same codebase. So I decided to throw out the latter, relying solely on
-reading from a Git repo. The `allArticles` function reads all articles
-from the given repo. This is what it currently looks like:
+reading from a Git repo.
+
+The `allArticles` function commandeers this logic. It reads all
+articles from the blog repo. This is what it currently looks like:
 
 ```go
 func allArticles[F types.Frontmatter](repo string) ([]types.Article[F], error) {
@@ -73,7 +75,7 @@ func allArticles[F types.Frontmatter](repo string) ([]types.Article[F], error) {
 	log.Printf("Successfully cloned repository %s", repo)
 
 	entries, err := fs.ReadDir("./" + genre)
-	if err != nil {
+	If err != nil {
 		return nil, err
 	}
 
@@ -88,4 +90,32 @@ func allArticles[F types.Frontmatter](repo string) ([]types.Article[F], error) {
 }
 ```
 
+There are five pivotal steps that can be outlined here:
 
+1. Create the in-memory filesystem: `fs := memfs.New()`
+2. Clone the blog repo worktree into this filesystem:
+   `git.Clone(memory.NewStorage(), fs, &git.CloneOptions{...}`
+3. Read the given *genre* from within the in-memory worktree:
+   `entries, err := fs.ReadDir("./" + genre)`. I go into more detail
+   on genres in the Buildablog [README](https://github.com/BrandonIrizarry/buildablog/blob/main/README.md#frontmatter).
+4. Run some code that marshals each Markdown entry under the genre
+   folder into an article struct that later on gets used inside a Go
+   template: `articles, err := entriesToArticles[F](fs, genre,
+   entries)`
+5. Return these articles, along with an error, to the REST endpoint
+   handler call site.
+
+# Flexibility
+
+The blog repo itself is configurable via the `BLOGDIR` environment
+variable. This name is a throwback from when it was using the local
+filesystem directly; now, it can also be set to an `https` remote
+repo. On my VPS, I have it set to `/var/git/brandons_blog`, which
+indeed was my endgame all along; the only admin-type thing I had to do
+was mark it as a safe repo using `git config`.
+
+Now, the one drawback to all this is that I've gotten used to seeing
+immediate feedback once I edit my content. Now, I have to remember to
+commit changes first when testing locally.
+
+Anyway, really good stuff.
